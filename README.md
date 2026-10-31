@@ -44,6 +44,7 @@ cp -r templates/workspace/ 我的智能体/
 | [05-素材与产出目录](spec/05-素材与产出目录.md) | 输入/输出分区、命名、git 取舍 |
 | [06-台账与跨会话状态](spec/06-台账与跨会话状态.md) | 用文件做 agent 的长期记忆 |
 | [07-多 CLI 协作](spec/07-多CLI协作.md) | 分工、上下文隔离、交接格式、何时上调度层 |
+| [08-远程技能库与本地Loader](spec/08-远程技能库与本地Loader.md) | 技能远程化、composition、Loader、与双机同步 |
 
 ## 评审说明
 

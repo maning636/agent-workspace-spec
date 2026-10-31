@@ -25,6 +25,10 @@
 <!-- 登记本工作区常用脚本，示例： -->
 - 校验产出：`python scripts/check_output.py`（待实现）
 
+## 技能来源
+<!-- 在此写明本工作区采用 spec/08 的 A/B/C 哪种模式，示例： -->
+本工作区技能采用 spec/08 模式 A：由 Loader 按 composition daily-coding@vX 加载，不提交 skills 正文。
+
 ## 禁止事项
 - 不修改 `素材/` 下任何文件
 - 不覆盖 `产出/` 中已有文件
