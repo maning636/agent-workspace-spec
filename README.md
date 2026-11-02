@@ -46,6 +46,12 @@ cp -r templates/workspace/ 我的智能体/
 | [06-台账与跨会话状态](spec/06-台账与跨会话状态.md) | 用文件做 agent 的长期记忆 |
 | [07-多 CLI 协作](spec/07-多CLI协作.md) | 分工、上下文隔离、交接格式、何时上调度层 |
 | [08-远程技能库与本地Loader](spec/08-远程技能库与本地Loader.md) | 技能远程化、composition、Loader、与双机同步 |
+| [09-通用交接契约](spec/09-handoff-contract.md) | 通用交接信封、下游接受与基线生命周期（候选） |
+| [10-人工决定与升级协议](spec/10-human-decisions.md) | BLOCKED 决定单、恢复条件与等待期间纪律（候选） |
+| [11-规则版本锁定与组合验证](spec/11-rule-versioning-and-evals.md) | 独立版本、组合锁、只读总览与验证纪律（候选） |
+
+组合多个规则库时，从 `templates/workspace/rules.lock.yaml` 开始锁定兼容版本；
+新增 09～11 仍需真实项目试点，不代表生产验证结论。变更记录见 [CHANGELOG](CHANGELOG.md)。
 
 ## 评审说明
 
