@@ -1,0 +1,12 @@
+# 组合版本锁模板。采用前替换所有 REPLACE_WITH_* 占位值。
+# 未使用的规则库删除对应字段，不要保留看似真实的版本号。
+opc_playbook: "REPLACE_WITH_OPC_TAG_OR_COMMIT"
+engineering_standard: "REPLACE_WITH_ENGINEERING_TAG_OR_COMMIT"
+agent_workspace_spec: "REPLACE_WITH_WORKSPACE_SPEC_TAG_OR_COMMIT"
+handoff_schema: "handoff/v1"
+requirement_schema: "REPLACE_WITH_REQUIREMENT_SCHEMA_VERSION"
+composition: "REPLACE_WITH_COMPOSITION@META_TAG"
+verification:
+  scenario: "REPLACE_WITH_FIXTURE_PATH"
+  executed_at: "REPLACE_WITH_ISO8601_TIMESTAMP"
+  evidence: "REPLACE_WITH_VERIFICATION_OUTPUT_PATH"

@@ -117,6 +117,10 @@ load(composition_id):
 【必须】禁止在未改 pin 的情况下假设「拉 main 即升级」。
 【应当】业务台账中记录：本次任务使用的 `composition@meta-tag`。
 
+组合多个规则库时，工作区还【必须】维护 `rules.lock.yaml`，锁定各库与交接/需求 schema 的具体版本。
+Loader 先读 composition 的 pin，再核对 `rules.lock.yaml`；两者不一致时报告冲突，不得静默选择较新的 `main`。
+各库独立 semver，不要求同号；组合验证与升级回滚见 [11 · 规则版本锁定与组合验证](11-rule-versioning-and-evals.md)。
+
 ## 7. 多 CLI / 双机
 
 - 两台机器【应当】共用同一 `skills-meta` 远程与同一 composition pin。
